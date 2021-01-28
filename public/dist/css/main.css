@@ -1,0 +1,15 @@
+/*.chosen-container-multi .chosen-choices li.search-choice .search-choice-close:before {*/
+/*content: "x";*/
+/*display: inline-block;*/
+/*color: #888;*/
+/*font-family: 'Boogaloo', cursive;*/
+/*font-weight: 900;*/
+/*font-size: 16px;*/
+/*position: absolute;*/
+/*right: 2px;*/
+/*top: -1px;*/
+/*}*/
+
+.box.box-primary {
+    border: none;
+}

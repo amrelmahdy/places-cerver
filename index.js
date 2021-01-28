@@ -6,6 +6,9 @@ const app = express()
 const port  =  process.env.PORT || 3000
 
 app.use(expressLayouts)
+app.use("/public", express.static(path.join(__dirname, "public")));
+
+
 // Register ejs as .html. If we did
 // not call this, we would need to
 // name our views foo.ejs instead
@@ -21,8 +24,8 @@ app.set('views', path.join(__dirname, 'views'))
 // Without this you would need to
 // supply the extension to res.render()
 // ex: res.render('users.html').
-app.set('view engine', 'html');
-app.use(express.static(path.join(__dirname, 'public')))
+app.set('view engine', 'html')
+app.set('layout', 'layouts/master-layout');
 
 
 app.get("/", (req, res) => {
